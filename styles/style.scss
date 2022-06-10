@@ -1,7 +1,11 @@
 @import 'variables';
 
 @media screen and (max-device-width:480px){
-
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    background: radial-gradient(circle at center, red 0, blue, green 100%);
+}
 // Begin Header
 // Einde Header
 
