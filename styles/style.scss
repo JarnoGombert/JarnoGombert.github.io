@@ -1,14 +1,25 @@
 @import 'variables';
 
+@media screen and (max-device-width:480px){
 
-footer ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+// Begin Header
+// Einde Header
+
+// Begin Main
+// Einde Main
+
+// Begin Footer
+  footer ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer ul li img {
+        max-width: 50px;
+        max-height: 50px;
+    }  
+// Einde Footer
 }
 
-footer ul li img {
-    max-width: 50px;
-    max-height: 50px;
-}
