@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <?php include 'functies/db_functions.php';
+    <?php include 'functies/db_functions.php'
     
-    $gebruiker = null;
-    if (isset($_POST['login']))
+    $Newuser = null;
+    if (isset($_POST['registreer']))
     {
-        $gebruiker = getUser($_POST['gebruikersnaam'], $_POST['wachtwoord']);
+        $Newuser = db_insertData("INSERT INTO `gebruikers`(`ID`, `Gebruikersnaam`, `E_mail`, `Wachtwoord`) VALUES ('','','[value-3]','[value-4]')");
         // hier wordt de eigenaar gecheckt of hij toestemming heeft tot alle bestemmingen
 
-        if($gebruiker != 'No user found') {
+        if($user != 'No user found') {
 
             // en dan wordt hij doorgestuurd naar de resultaten
-            header("Location: ./voorpagina.php");
+            header("Location: ./invoeg.php");
             exit;
         }
     }
@@ -45,8 +45,7 @@
                         <td><input type="password" name="wachtwoord" id="wachtwoord" /><i class="bi bi-eye-slash" id="togglePassword"></i></td>
                     </tr> 
                 </table>
-                <p><button type="submit" id="submit" class="submit">Log in</button></p>  
-                <p>Druk hier als je wilt <a href="<?php header("Location: ./index.php");?>">registreren</a></p>                           
+                <p><button type="submit" name="registreer" id="registreer" class="submit">Log in</button></p>   
             </form>
         </div>
     </main>

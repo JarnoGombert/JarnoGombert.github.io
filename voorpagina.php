@@ -10,45 +10,14 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <?php include 'functies/db_functions.php';
-    
-    $gebruiker = null;
-    if (isset($_POST['login']))
-    {
-        $gebruiker = getUser($_POST['gebruikersnaam'], $_POST['wachtwoord']);
-        // hier wordt de eigenaar gecheckt of hij toestemming heeft tot alle bestemmingen
-
-        if($gebruiker != 'No user found') {
-
-            // en dan wordt hij doorgestuurd naar de resultaten
-            header("Location: ./voorpagina.php");
-            exit;
-        }
-    }
-    ?>
+    <?php include 'functies/db_functions.php'?>
     <header>
         <nav>
             
         </nav>
     </header>
     <main>
-        <div class="container">
-            <h1>Inloggen</h1>
-            <form method="post">
-                <table>
-                    <tr>
-                        <td><label for="username">Gebruikersnaam:</label></td>
-                        <td><input type="text" name="gebruikersnaam" id="gebruikersnaam"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="password">Wachtwoord:</label></td>
-                        <td><input type="password" name="wachtwoord" id="wachtwoord" /><i class="bi bi-eye-slash" id="togglePassword"></i></td>
-                    </tr> 
-                </table>
-                <p><button type="submit" id="submit" class="submit">Log in</button></p>  
-                <p>Druk hier als je wilt <a href="<?php header("Location: ./index.php");?>">registreren</a></p>                           
-            </form>
-        </div>
+        
     </main>
     <footer>
         <ul>
