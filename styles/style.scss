@@ -1,10 +1,10 @@
 @import 'variables';
 
-@media screen and (max-device-width:480px){
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    background-image: linear-gradient(-40deg, rgba(97, 31, 97, 1) 50%, rgba(132, 77, 77, 1) 100%);}
+    background-image: linear-gradient(-40deg, rgba(97, 31, 97, 1) 50%, rgba(132, 77, 77, 1) 100%);
+}
 // Begin Header
 // Einde Header
 
@@ -19,13 +19,16 @@ form p label {
 // Einde Main
 
 // Begin Footer
-  footer ul li {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+footer{
+    display: flex;
+    justify-content: flex-start;
+}
+footer ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
  
 // Einde Footer
-}
 
