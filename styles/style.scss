@@ -3,31 +3,88 @@
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0 auto;
-    background-image: linear-gradient(-40deg, rgba(97, 31, 97, 1) 50%, rgba(132, 77, 77, 1) 100%);
+    background-image: linear-gradient(-90deg, rgb(89, 90, 110) 50%, rgb(61, 62, 114) 100%);
+}
+body{
+    min-height: 98vh;
 }
 // Begin Header
+header{
+    height: 300px;
+}
 // Einde Header
 
 // Begin Main
+main{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color: white;
+    padding: 3%;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1{
+    padding: 2%;
+}
+table tr td{
+    padding: 10px;
+}
+
+//Begin input design
+
+//Einde input design
+
 form i {
-    margin-left: -30px;
+    margin-left: -25px;
     cursor: pointer;
 }
-form p label {
-    color: blue;
+form p {
+    display: flex;
+    justify-content: space-evenly;
 }
+form p button {
+    width: 40%;
+}
+
+
 // Einde Main
 
 // Begin Footer
 footer{
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    bottom: 0;
+    width: 97%;
+    height: 40px;
+
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+}
+footer ul{
+    display: flex;
+    gap: 5px;
 }
 footer ul li {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: linear-gradient(-90deg, rgb(89, 90, 110) 50%, rgb(61, 62, 114) 100%);
+    transition: all 1s;
 }
  
 // Einde Footer
