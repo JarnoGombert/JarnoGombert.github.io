@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <?php include 'functies/db_functions.php';
+    <!-- <?php include 'functies/db_functions.php';
     
     $gebruiker = null;
     if (isset($_POST['login']))
@@ -21,11 +21,11 @@
         if($gebruiker != 'No user found') {
 
             // en dan wordt hij doorgestuurd naar de resultaten
-            header("Location: ./voorpagina.php");
+            header("Location: paginas/voorpagina.php");
             exit;
         }
     }
-    ?>
+    ?> -->
     <header>
         <nav>
             
@@ -45,8 +45,8 @@
                         <td><input type="password" name="wachtwoord" id="wachtwoord" /><i class="bi bi-eye-slash" id="togglePassword"></i></td>
                     </tr> 
                 </table>
-                <p><button type="submit" id="submit" class="submit">Log in</button></p>  
-                <p>Druk hier als je wilt <a href="<?php header("Location: ./index.php");?>">registreren</a></p>                           
+                <p><button type="submit" nane="login" id="login" class="submit">Log in</button></p>  
+                <!-- <p>Druk hier als je wilt <a href="<?php header("Location: paginas/registreren.php");?>">registreren</a></p>                            -->
             </form>
         </div>
     </main>

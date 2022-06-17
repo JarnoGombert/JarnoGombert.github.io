@@ -7,10 +7,10 @@
     <title>Wachtwoord Beheer</title>
     <link rel="icon" href="images/slotje.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-    <?php include 'functies/db_functions.php'?>
+    <?php include '../functies/db_functions.php';?>
     <header>
         <nav>
             
@@ -22,7 +22,7 @@
     <footer>
         <ul>
             <li>
-                <img src="images/slotje.png" height="40" width="40" alt="Logo"><span> © 2022 JarnoG, Inc.</span>
+                <img src="../images/slotje.png" height="40" width="40" alt="Logo"><span> © 2022 JarnoG, Inc.</span>
             </li>
         </ul>
         <ul>
